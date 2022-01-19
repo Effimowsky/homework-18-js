@@ -11,7 +11,7 @@ function currentTime() {
   hour = updateTime(hour);
   min = updateTime(min);
   sec = updateTime(sec);
-  document.getElementById("p").innerText =
+  document.getElementById("clock").innerText =
     hour + ":" + min + ":" + sec + "" + midday;
   var t = setTimeout(currentTime, 1000);
 }
