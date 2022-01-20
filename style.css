@@ -11,3 +11,7 @@
   display: inline-block;
   font-size: 70px;
 }
+.slider-item img {
+  width: 1349px;
+  height: 700px;
+}
