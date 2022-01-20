@@ -13,7 +13,7 @@ function currentTime() {
   sec = updateTime(sec);
   document.getElementById("clock").innerText =
     hour + ":" + min + ":" + sec + "" + midday;
-  var t = setTimeout(currentTime, 1000);
+  var t = setInterval(currentTime, 1000);
 }
 
 function updateTime(k) {
