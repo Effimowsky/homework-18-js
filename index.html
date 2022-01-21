@@ -9,30 +9,27 @@
   </head>
   <body>
     <div id="clock"></div>
-    <div class="slider-item">
-      <img src="/images/image1.jpg" alt="image" />
-      <div class="caption">
-        <h2>life is beautiful</h2>
-        <p>dont worry be happy</p>
+    <div class="slides-container">
+      <div onmouseenter="pauseSlides()" onmouseleave="startSlides()">
+        <div class="slider-item">
+          <img src="https://picsum.photos/seed/picsum/1200/400" alt="image" />
+        </div>
+        <div class="slider-item">
+          <img src="https://picsum.photos/1200/400?grayscale" alt="image" />
+        </div>
+        <div class="slider-item">
+          <img src="https://picsum.photos/1200/400?random=1" alt="image" />
+        </div>
+        <div class="slider-item">
+          <img src="https://picsum.photos/1200/400?random=2" alt="image" />
+        </div>
+        <div class="slider-nav">
+          <span class="dot" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
-    </div>
-    <div class="slider-item">
-      <img src="/images/image2.jpg" alt="image" />
-      <div class="caption">
-        <h2>life is beautiful</h2>
-        <p>dont worry be happy</p>
-      </div>
-    </div>
-    <div class="slider-item">
-      <img src="/images/image3.jpg" alt="image" />
-      <div class="caption">
-        <h2>life is beautiful</h2>
-        <p>dont worry be happy</p>
-      </div>
-    </div>
-    <div class="slider-btns">
-      <button id="prev-slide-btn"></button>
-      <button id="next-slide-btn"></button>
     </div>
     <script src="app.js"></script>
   </body>
